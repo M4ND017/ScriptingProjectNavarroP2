@@ -30,7 +30,21 @@ public class BehaviorComponentScrpit : MonoBehaviour
         {
             GetComponent<Renderer>().material.color=Color.yellow;
         }
-    }      
+if(Input.GetKeyDown(KeyCode.D))
+        {
+            GetComponent<Renderer>().material.color = Color.black;
+        }
+if(Input.GetKeyDown(KeyCode.W))
+        {
+            GetComponent<Renderer>().material.color = Color.white;
+        }
+if(Input.GetKeyDown(KeyCode.C))
+        {
+            GetComponent<Renderer>().material.color=Color.clear;
+        }
+    }    
+
+    
             
 }
 
