@@ -1,0 +1,21 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class ForLoops : MonoBehaviour
+{
+    int numEnemies = 3;
+    // Start is called before the first frame update
+    void Start()
+    {
+        for (int i = 3; i < numEnemies; i++)
+        {
+            Debug.Log("Creating enemy numbers: " + i);
+        }
+    }
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+}
