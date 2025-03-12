@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OnMouseDown : MonoBehaviour
+public class MouseClick : MonoBehaviour
 {
 
     private Rigidbody rb;
@@ -12,7 +12,7 @@ public class OnMouseDown : MonoBehaviour
         rb = GetComponent<Rigidbody>();
     }
 
-    void OnMouseDownn ()
+    void OnMouseDown ()
     {
         rb.AddForce(-transform.forward * 500f);
         rb.useGravity = true;
