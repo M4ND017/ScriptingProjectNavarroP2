@@ -30,10 +30,9 @@ public class Shooting : MonoBehaviour
     {
         if(Input.GetButtonDown("Fire1")&& inventory.myStuff.bullet > 0)
         {
-           
-        }
-        {
-            
+           Rigidbody bulletInstance = Instantiate(bulletPrefab, firePosition.position, firePosition.rotation) as Rigidbody;
+            bulletInstance.AddForce(firePosition.forward * bulletspeed);
+            inventory.myStuff.bullet--;
         }
     }
 }
